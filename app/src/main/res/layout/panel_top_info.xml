@@ -89,7 +89,7 @@
                         android:textAlignment="center"
                         android:text="---"
                         android:textColor="@color/place_autocomplete_prediction_secondary_text"
-                        android:textSize="22dp" />
+                        android:textSize="15dp" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -156,9 +156,8 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -179,13 +178,13 @@
                         android:id="@+id/txt_pasajeros_info"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:paddingTop="12dp"
                         android:text="No se cargo informacion"
                         android:textColor="@color/place_autocomplete_prediction_secondary_text"
-                        android:textSize="15dp" />
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -235,7 +234,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="147dp"
         android:layout_margin="10dp"
         android:baselineAligned="false"
         android:orientation="horizontal">
@@ -263,59 +262,280 @@
             <TextView
                 android:id="@+id/txt_origin_info"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="200dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:paddingTop="5dp"
+                android:paddingTop="12dp"
                 android:text="No se cargo informacion"
                 android:textColor="@color/place_autocomplete_prediction_secondary_text"
-                android:textSize="17dp" />
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
 
         </RelativeLayout>
+
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:baselineAligned="false"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="0dp"
-                android:tint="@color/colorPrimary"
-                app:srcCompat="@drawable/detination_40dp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/txt_destination_info"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:paddingTop="5dp"
-                android:text="No se cargo informacion"
-                android:textColor="@color/place_autocomplete_prediction_secondary_text"
-                android:textSize="17dp" />
+                android:layout_height="147dp"
+                android:layout_margin="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
 
-        </RelativeLayout>
-    </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/detination_40dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_destination_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="12dp"
+                        android:text="No se cargo informacion"
+                        android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/ic_flight_black_24dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_observationFlight"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="12dp"
+                        android:textStyle="bold"
+                        android:text="No se cargo informacion"
+                        android:textColor="@color/danger"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="2dp"
+                        android:textSize="20dp"
+                        android:text="Lote:"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txt_lote"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="--"
+                        android:textAlignment="center"
+                        android:textColor="@color/GRREN_FULL"
+                        android:textSize="20dp" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="2dp"
+                        android:textSize="20dp"
+                        android:text="Flete:"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txt_flete"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="--"
+                        android:textAlignment="center"
+                        android:textColor="@color/danger"
+                        android:textSize="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="2dp"
+                        android:textSize="20dp"
+                        android:text="Piso:"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txt_piso_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="--"
+                        android:textAlignment="center"
+                        android:textColor="@color/GRREN_FULL"
+                        android:textSize="20dp" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="2dp"
+                        android:textSize="20dp"
+                        android:text="Dpto:"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txt_dpto_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="--"
+                        android:inputType="text"
+                        android:textAlignment="center"
+                        android:textColor="@color/danger"
+                        android:textSize="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -363,42 +583,37 @@
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:baselineAligned="false"
-        android:orientation="horizontal">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0">
-
-            <TextView
-                android:id="@+id/txtStatus"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/cardview_dark_background"
-                android:paddingTop="10dp"
-                android:textAlignment="center"
-                android:textColor="@color/cast_expanded_controller_text_color"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
         android:baselineAligned="false"
         android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="0dp"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_near_me_black_24dp" />
+
+
+        </RelativeLayout>
+
+
+
 
         <RelativeLayout
             android:layout_width="70dp"
@@ -409,15 +624,33 @@
                 android:id="@+id/txt_km_info"
                 android:textAlignment="center"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:background="@color/cast_expanded_controller_text_color"
-                android:paddingTop="8dp"
+                android:paddingTop="0dp"
                 android:text="0Km"
                 android:textColor="@color/colorPrimary"
-                android:textSize="30dp" />
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/mpsdk_cash_sign" />
+
 
         </RelativeLayout>
 
@@ -429,18 +662,112 @@
             <TextView
                 android:id="@+id/txt_amount_info"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:paddingTop="0dp"
                 android:background="@color/cast_expanded_controller_text_color"
-                android:text="0$"
+                android:text="$0"
                 android:textAlignment="center"
                 android:textColor="#4d6f3e"
-                android:textSize="40dp" />
+                android:textSize="20sp" />
         </RelativeLayout>
     </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/content_ditance_real"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="2dp"
+                android:background="#129565"
+                android:text="Distancia recorrida"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/txt_distance_real"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#129565"
+                android:text="0.0Km"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textSize="45dp" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/infoGneral"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="0dp"
+                android:background="@color/cardview_dark_background"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/whithe"
+                android:textSize="16dp" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+    </LinearLayout>
+
 
 
 

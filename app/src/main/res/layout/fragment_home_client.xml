@@ -29,11 +29,14 @@
 
         </RelativeLayout>
 
+
         <RelativeLayout
             android:id="@+id/contentSildePanel"
             android:gravity="center|top"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+
             <include layout="@layout/panel_buton_info"/>
 
         </RelativeLayout>

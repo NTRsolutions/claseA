@@ -10,9 +10,10 @@
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:gravity="top"
-
 app:umanoPanelHeight="120dp"
 app:umanoShadowHeight="20dp">
+
+
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -26,15 +27,23 @@ app:umanoShadowHeight="20dp">
 
     </fragment>
 
+
+
+
 </RelativeLayout>
 
 <RelativeLayout
     android:id="@+id/contentSildePanel"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="430dp">
     <include layout="@layout/panel_top_info"/>
 
+
+
 </RelativeLayout>
+
+
+
 
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>
 

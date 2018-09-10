@@ -5,6 +5,24 @@
     android:weightSum="1">
 
     <TextView
+        android:id="@+id/textView62"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empresa"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_company"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ededed"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" />
+
+    <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

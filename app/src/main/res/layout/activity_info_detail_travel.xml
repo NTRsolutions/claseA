@@ -176,6 +176,47 @@
         </RelativeLayout>
     </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/ic_airline_seat_recline_normal_black_24dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_pasajeros_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentTop="true"
+                        android:paddingTop="12dp"
+                        android:text="No se cargo informacion"
+                        android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -346,6 +387,179 @@
         </RelativeLayout>
     </LinearLayout>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="2dp"
+                    android:textSize="20dp"
+                    android:text="Lote:"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/txt_lote"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/GRREN_FULL"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="2dp"
+                    android:textSize="20dp"
+                    android:text="Flete:"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/txt_flete"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/danger"
+                    android:textSize="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="2dp"
+                    android:textSize="20dp"
+                    android:text="Piso:"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/txt_piso_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/GRREN_FULL"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="2dp"
+                    android:textSize="20dp"
+                    android:text="Dpto:"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/txt_dpto_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="--"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="@color/danger"
+                    android:textSize="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -403,6 +617,7 @@
 
             <Button
                 android:id="@+id/button1"
+                android:visibility="invisible"
                 android:background="@color/danger"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -420,12 +635,22 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/bt_confirmar_reserva"
+                android:visibility="invisible"
                 android:background="@color/succes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.09"
                 android:text="Confirmar" />
+
+            <Button
+                android:id="@+id/btn_init_reserva"
+                android:visibility="invisible"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:text="Buscar Cliente" />
 
 
         </RelativeLayout>

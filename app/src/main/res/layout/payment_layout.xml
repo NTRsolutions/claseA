@@ -4,307 +4,576 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/place_autocomplete_prediction_primary_text"
+    android:background="@color/CLEARINPUTWHITE"
+
     android:weightSum="1">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:baselineAligned="false"
-
-            android:orientation="horizontal">
-
-
-                <RelativeLayout
-                    android:layout_width="70dp"
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+                <LinearLayout android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/cast_expanded_controller_ad_container_white_stripe_color">
+                    android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/txt_mount"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="0.00"
+                    android:baselineAligned="false"
+                    android:background="#129565"
+                    android:orientation="horizontal">
+
+
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="130dp"
-
-                            android:paddingTop="10dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_margin="15dp"
-                            android:text="0$"
-                            android:textAlignment="center"
-                            android:background="@color/place_autocomplete_prediction_secondary_text"
-                            android:textColor="@color/succes"
-                            android:textSize="80dp" />
-                </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="0dp"
-                            android:tint="@color/common_google_signin_btn_text_dark_default"
-                            app:srcCompat="@drawable/ic_directions_black_24dp" />
+                            android:layout_weight="1">
 
-                </RelativeLayout>
+                                <TextView
 
-                <RelativeLayout
-                    android:layout_width="70dp"
+                                    android:id="@+id/txt_name"
+                                    android:textSize="30dp"
+                                    android:paddingTop="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:text="Confirma Tu Viaje!"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/blanco" />
+                        </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/distance_txt"
-                            android:layout_width="wrap_content"
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="93dp"
+                            android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/txt_mount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#129565"
+                                    android:paddingTop="1dp"
+                                    android:text="$0"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="80dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_view"
+                            android:padding="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardCornerRadius="9dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentTop="true"
+                                    android:layout_weight="1">
 
-                            android:ems="20"
-                            android:hint=""
-                            android:inputType="numberDecimal"
-                            android:minHeight="50dp"
-                            android:textAlignment="center"
-                            android:background="@color/place_autocomplete_prediction_secondary_text"
-                            android:textColor="@color/succes"
-                            android:textSize="30dp" />
 
-                </RelativeLayout>
-        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="20dp"
+                                                    android:textAlignment="center"
+                                                    android:text="IDA"/>
+                                        <TextView
+                                            android:id="@+id/distance_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                            android:ems="25"
+                                            android:layout_marginTop="-7dp"
+                                            android:hint=""
+                                            android:text="0KM"
+                                            android:inputType="numberDecimal"
+                                            android:minHeight="50dp"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/mpsdk_review_description_text"
+                                            android:textSize="35dp" />
 
-                <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0">
+                                        </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                                    android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="0dp"
-                            android:tint="@color/common_google_signin_btn_text_dark_default"
-                            app:srcCompat="@drawable/ic_access_time_black_40dp" />
+                            android:layout_weight="1">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
 
-                </RelativeLayout>
+                                <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="20dp"
+                                            android:textAlignment="center"
+                                            android:text="VUELTA"/>
 
-                <RelativeLayout
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                                        <TextView
+                                            android:id="@+id/distance_return_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:ems="25"
+                                            android:layout_marginTop="-7dp"
+                                    android:hint=""
+                                            android:text="0KM"
+                                    android:inputType="numberDecimal"
+                                    android:minHeight="50dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/mpsdk_review_description_text"
+                                            android:textSize="35dp" />
+                                        </LinearLayout>
+                        </RelativeLayout>
+                </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/txtTimeslep"
-                            android:layout_width="wrap_content"
+
+                        </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                                <android.support.v7.widget.CardView
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/card_view2"
+                                    android:padding="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    card_view:cardCornerRadius="9dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
+                            android:layout_weight="0">
 
-                            android:ems="20"
-                            android:hint=""
-                            android:inputType="numberDecimal"
-                            android:minHeight="50dp"
-                            android:paddingTop="10dp"
-                            android:textAlignment="center"
-                            android:background="@color/place_autocomplete_prediction_secondary_text"
-                            android:textColor="@color/succes"
-                            android:textSize="30dp" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="0dp"
+                                                            android:layout_marginTop="15dp"
+                                    android:tint="@color/mpsdk_argencard"
+                                    app:srcCompat="@drawable/ic_access_time_black_40dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
 
-                </RelativeLayout>
-        </LinearLayout>
+                        </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
+                        <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                            android:layout_weight="1">
 
-                <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="20dp"
+                                                            android:textAlignment="center"
+                                                            android:text="Tiempo de espera"/>
+                                <TextView
+                                    android:id="@+id/txtTimeslep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                                            android:layout_alignParentTop="true"
+                                                            android:ems="25"
+                                                            android:paddingTop="15dp"
+                                    android:hint=""
+                                                            android:text="00:00:00"
+                                    android:inputType="numberDecimal"
+                                    android:minHeight="50dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/mpsdk_review_description_text"
+                                    android:textSize="30dp" />
+
+                        </RelativeLayout>
+                </LinearLayout>
+
+
+                                </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                                <android.support.v7.widget.CardView
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/card_view3"
+                                    android:padding="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    card_view:cardCornerRadius="9dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="0dp"
-                            android:tint="@color/common_google_signin_btn_text_dark_default"
-                            app:srcCompat="@drawable/ic_local_parking_black_40dp" />
+                            android:layout_weight="0">
 
-                </RelativeLayout>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="0dp"
+                                                            android:layout_marginTop="15dp"
+                                            android:tint="@color/mpsdk_argencard"
+                                            app:srcCompat="@drawable/ic_airport_shuttle_black_40dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerHorizontal="true" />
 
-                <RelativeLayout
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                                </RelativeLayout>
 
-                        <EditText
-                            android:id="@+id/peajes_txt"
-                            android:layout_width="wrap_content"
+                                <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="20dp"
+                                                            android:textAlignment="center"
+                                                            android:text="Flete"/>
+
+
+
+                                        <TextView
+                                            android:id="@+id/amount_flet_txt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                                            android:layout_alignParentTop="true"
+                                                            android:ems="25"
+                                                            android:paddingTop="7dp"
+                                            android:hint=""
+                                                            android:text="0"
+                                            android:inputType="numberDecimal"
+                                            android:minHeight="50dp"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/mpsdk_review_description_text"
+                                                            android:textSize="45dp" />
+
+                                </RelativeLayout>
+                        </LinearLayout>
+
+
+                                </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                    android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                                <android.support.v7.widget.CardView
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/card_view4"
+                                    android:padding="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    card_view:cardCornerRadius="9dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignParentTop="true"
-                            android:background="@color/CLEARINPUT"
-                            android:ems="20"
-                            android:hint=" Peaje"
-                            android:inputType="numberDecimal"
-                            android:minHeight="50dp"
-                            android:textAlignment="center"
-                            android:textColor="@color/place_autocomplete_search_text"
-                            android:textSize="30dp" />
+                            android:layout_weight="0">
 
-                </RelativeLayout>
-        </LinearLayout>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="0dp"
+                                                            android:layout_marginTop="15dp"
+                                    android:tint="@color/mpsdk_argencard"
+                                    app:srcCompat="@drawable/ic_local_parking_black_40dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
+                        </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0">
+                        <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                            android:layout_weight="1">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+
+
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="20dp"
+                                                            android:textAlignment="center"
+                                                            android:text="Peaje"/>
+
+                                <EditText
+                                                            android:layout_margin="10dp"
+                                    android:id="@+id/peajes_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                                            android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:ems="20"
+                                                            android:text=""
+                                                            android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:background="@drawable/rounded_border_textview"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/mpsdk_review_description_text"
+                                    android:textSize="30dp" />
+
+                        </RelativeLayout>
+                </LinearLayout>
+
+
+                                </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                                <android.support.v7.widget.CardView
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/card_view6"
+                                    android:padding="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    card_view:cardCornerRadius="9dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="0dp"
-                            android:tint="@color/common_google_signin_btn_text_dark_default"
-                            app:srcCompat="@drawable/ic_directions_car_black_40dp" />
+                            android:layout_weight="0">
 
-                </RelativeLayout>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="0dp"
+                                                            android:layout_marginTop="15dp"
+                                    android:tint="@color/mpsdk_argencard"
+                                    app:srcCompat="@drawable/ic_directions_car_black_40dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
 
-                <RelativeLayout
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                        </RelativeLayout>
 
-                        <EditText
-                            android:id="@+id/parkin_txt"
-                            android:layout_width="wrap_content"
+                        <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="20dp"
+                                                            android:textAlignment="center"
+                                                            android:text="Estacionamiento"/>
+
+                                <EditText
+                                                            android:layout_margin="10dp"
+                                    android:id="@+id/parkin_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:ems="20"
+                                                            android:text=""
+                                                            android:hint=""
+                                    android:inputType="numberDecimal"
+                                    android:background="@drawable/rounded_border_textview"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/mpsdk_review_description_text"
+                                                            android:textSize="30dp" />
+
+                        </RelativeLayout>
+                </LinearLayout>
+
+
+                                </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:layout_gravity="bottom"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:background="@color/CLEARINPUT"
-                            android:ems="20"
-                            android:hint=" Estacionamiento"
-                            android:inputType="numberDecimal"
-                            android:minHeight="50dp"
-                            android:textAlignment="center"
-                            android:textColor="@color/place_autocomplete_search_text"
-                            android:textSize="30dp" />
+                            android:layout_weight="1">
 
-                </RelativeLayout>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="101dp"
-            android:layout_gravity="bottom"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                        <Button
-                            android:id="@+id/bnt_pay_car"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_centerHorizontal="true"
-                            android:layout_gravity="top|center"
-                            android:background="@drawable/circle"
-                            android:drawableTop="@drawable/ic_media_pause"
-                            android:paddingTop="20dp"
-                            android:text="Tarjeta"
-                            android:textColor="#fff"
-                            android:tint="@color/colorPrimary"
-                            app:layout_anchorGravity="bottom|left" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                        <Button
-                            android:id="@+id/btn_firm_voucher"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_centerHorizontal="true"
-                            android:layout_gravity="top|center"
-                            android:background="@drawable/circle_btn_red"
-                            android:drawableTop="@drawable/ic_collapse_00001"
-                            android:paddingTop="20dp"
-                            android:text="Firmar"
-                            android:textColor="#fff"
-                            app:layout_anchorGravity="bottom|left" />
+                                <Button
+                                    android:id="@+id/bnt_pay_car"
+                                    android:padding="4dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/buton_round_dark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/whithe"
+                                    android:textStyle="bold"
+                                    android:textSize="12dp"
+                                    android:text="Tarjeta"
+                                    app:layout_anchorGravity="bottom|left"
+                                    android:drawableLeft="@drawable/ic_credit_card_black_24dp" />
 
 
-                </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                        </RelativeLayout>
 
-                        <Button
-                            android:id="@+id/btn_pay_cash"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_centerHorizontal="true"
-                            android:layout_gravity="top|center"
-                            android:background="@drawable/circle_btn_gren"
-                            android:drawableTop="@drawable/cast_ic_notification_forward"
-                            android:paddingTop="20dp"
-                            android:text="Efectivo"
-                            android:textColor="#fff"
-                            android:tint="@color/colorPrimary"
-                            app:layout_anchorGravity="bottom|left" />
-                </RelativeLayout>
-        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/btn_firm_voucher"
+                                    android:padding="4dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/buton_round_dark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/whithe"
+                                    android:textStyle="bold"
+                                    android:textSize="12dp"
+                                    android:text="Firmar"
+                                    app:layout_anchorGravity="bottom|left"
+                                    android:drawableLeft="@drawable/ic_touch_app_black_40dp" />
 
 
 
 
 
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                                <Button
+                                    android:id="@+id/btn_pay_cash"
+                                    android:padding="4dp"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/buton_round_dark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/whithe"
+                                    android:textStyle="bold"
+                                    android:textSize="12dp"
+                                    android:text="Efectivo"
+                                    app:layout_anchorGravity="bottom|left"
+                                    android:drawableLeft="@drawable/ic_attach_money_black_24dp" />
+
+
+
+                        </RelativeLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+        </ScrollView>
 </LinearLayout>

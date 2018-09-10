@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.apreciasoft.admin.asremis.Activity.HomeActivity">
+    tools:context="com.apreciasoft.admin.remisclasea.Activity.HomeActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -27,9 +27,10 @@
     <include layout="@layout/content_home"/>
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:baselineAligned="false"
 
@@ -42,74 +43,73 @@
 
             <Button
                 android:id="@+id/btn_cancel"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentTop="true"
+                android:background="@drawable/buton_round_red"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="4dp"
+                android:layout_margin="5dp"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="top|center"
-                android:background="@drawable/circle_btn_red"
-                android:drawableTop="@drawable/quantum_ic_clear_white_24"
-                android:paddingTop="20dp"
-                android:text="Cancelar"
-                android:textColor="#fff"
-                android:tint="@color/colorPrimary"
-                app:layout_anchorGravity="bottom|left" />
+                android:layout_centerVertical="true"
+                android:textColor="@color/whithe"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="RECHAZAR"
+                app:layout_anchorGravity="bottom|left"
+                android:drawableLeft="@drawable/ic_phonelink_erase_black_24dp" />
+
+
 
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
+
             <Button
                 android:id="@+id/btn_init"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentTop="true"
+                android:padding="4dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/buton_round_dark"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="top|center"
-                android:background="@drawable/circle"
-                android:drawableTop="@drawable/quantum_ic_play_circle_filled_white_36"
-                android:paddingTop="20dp"
-                android:text="Iniciar"
-                android:textColor="#fff"
-                app:layout_anchorGravity="bottom|left" />
+                android:layout_centerVertical="true"
+                android:textColor="@color/whithe"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="INICIAR"
+                app:layout_anchorGravity="bottom|left"
+                android:drawableLeft="@drawable/ic_nature_people_black_24dp" />
+
+
+
         </RelativeLayout>
 
     </LinearLayout>
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="467dp"
-        android:textStyle="bold"
+
         android:id="@+id/textTiempo"
-        android:textAlignment="center"
-        android:background="@color/succes"
-        android:textColor="@color/colorPrimary"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="-20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/rounded_border_textview_time"
+        android:textColor="@color/succes"
+        android:gravity="center" />
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/cast_ic_expanded_controller_pause"
-        app:backgroundTint="@color/colorPrimary"/>
 
-    <include
-        android:id="@+id/payment"
-        layout="@layout/payment_layout" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:baselineAligned="false"
 
@@ -120,61 +120,134 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
+
             <Button
                 android:id="@+id/btn_iniTimeSlep"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentTop="true"
+                android:padding="4dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/buton_round_gray"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="top|center"
-                android:background="@drawable/circle"
-                android:drawableTop="@drawable/ic_media_pause"
-                android:paddingTop="20dp"
-                android:text="Espera"
-                android:textColor="#fff"
-                android:tint="@color/colorPrimary"
-                app:layout_anchorGravity="bottom|left" />
+                android:layout_centerVertical="true"
+                android:textColor="@color/whithe"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:text="Esperar"
+                app:layout_anchorGravity="bottom|left"
+                android:drawableLeft="@drawable/ic_timer_black_40dp" />
+
+
 
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
+
             <Button
                 android:id="@+id/btn_pre_finish"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="top|center"
-                android:background="@drawable/circle_btn_red"
-                android:drawableTop="@drawable/ic_collapse_00001"
-                android:paddingTop="20dp"
+                android:padding="4dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/buton_round_red"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/whithe"
+                android:textStyle="bold"
+                android:textSize="10dp"
                 android:text="Finalizar"
-                android:textColor="#fff"
                 app:layout_anchorGravity="bottom|left"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+                android:drawableLeft="@drawable/ic_thumb_up_black_24dp" />
+
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
 
             <Button
                 android:id="@+id/btn_return"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentTop="true"
+                android:padding="4dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/buton_round_dark"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
-                android:layout_gravity="top|center"
-                android:background="@drawable/circle"
-                android:drawableTop="@drawable/cast_ic_notification_forward"
-                android:paddingTop="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/whithe"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Vuelta"
-                android:textColor="#fff"
-                android:tint="@color/colorPrimary"
-                app:layout_anchorGravity="bottom|left" />
+                app:layout_anchorGravity="bottom|left"
+                android:drawableLeft="@drawable/ic_autorenew_black_24dp" />
         </RelativeLayout>
     </LinearLayout>
+
+    <include
+        android:id="@+id/payment"
+        layout="@layout/payment_layout" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/material_design_android_floating_action_menu_chofer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        app:menu_animationDelayPerItem="55"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:menu_colorPressed="@color/colorPrimary"
+        app:menu_colorRipple="#fff"
+        app:menu_fab_label=""
+        app:menu_fab_size="normal"
+        app:menu_labels_colorPressed="#fff"
+        app:menu_labels_colorRipple="#fff"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_showShadow="false"
+        app:menu_labels_singleLine="false"
+        app:menu_labels_textColor="#f2f1f1"
+        app:menu_labels_textSize="15sp"
+        app:menu_openDirection="up"
+        app:menu_shadowColor="@color/colorPrimary"
+        app:menu_shadowRadius="0dp"
+        app:menu_shadowXOffset="0dp"
+        app:menu_shadowYOffset="0dp"
+        app:menu_showShadow="true"
+        tools:ignore="VectorDrawableCompat">
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/material_design_floating_action_menu_item_chofer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_record_voice_over_black_24dp"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_colorRipple="@color/colorAccent"
+            app:fab_size="normal"
+            app:fab_label="Viaje de Calle"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
 
 
 </android.support.design.widget.CoordinatorLayout>

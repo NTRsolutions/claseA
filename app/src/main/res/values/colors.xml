@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#364150</color>
-    <color name="colorPrimaryDark">#2b3643</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#999</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
     <color name="blue">#3598dc</color>
+    <color name="blueDark">#155c8c</color>
     <color name="whithe">#ffffff</color>
     <color name="blueClear">#6c7f96</color>
     <color name="succes">#26c281</color>
@@ -12,6 +13,9 @@
     <color name="GRREN_CLEAR">#c3fecb</color>
     <color name="RED_CLEAR">#fab5b5</color>
     <color name="CLEARINPUT">#d6d6d6</color>
+    <color name="CLEARINPUTWHITE">#ececec</color>
+    <color name="DARK">#364150</color>
+    <color name="CLEAR">#55575b</color>
 
 
     <color name="negro_semitransparente">#B2000000</color>

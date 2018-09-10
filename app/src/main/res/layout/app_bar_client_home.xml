@@ -2,12 +2,11 @@
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.apreciasoft.admin.asremis.Activity.HomeClientActivity">
+    tools:context="com.apreciasoft.admin.remisclasea.Activity.HomeClientActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -26,76 +25,552 @@
     </android.support.design.widget.AppBarLayout>
 
 
-
-
-
     <include layout="@layout/content_client_home"
         android:id="@+id/include" />
 
 
-    <RelativeLayout
-        android:id="@+id/contetRequestTravel"
-        android:layout_marginTop="60dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
         <android.support.v7.widget.CardView
-            android:id="@+id/card_view"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="top"
-            android:layout_margin="5dp"
-            app:cardCornerRadius="4dp">
-
-            <fragment
-                android:id="@+id/place_autocomplete_fragment"
-                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </android.support.v7.widget.CardView>
-
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_marginTop="55dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:background="@color/blanco"
-                android:layout_width="fill_parent"
-                android:layout_height="45dp" />
-
-
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_requetTravelNow"
-            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/contetRequestTravel"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:height="60dp"
-            android:textSize="30dp"
-            android:width="390dp"
-            android:text="Solicitar"
-            android:textColor="@color/whithe"
-            app:backgroundTint="@color/colorPrimary" />
+            android:layout_marginTop="60dp"
+            style="@style/MyCardViewStyle">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+'
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/tv_blah"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:background="@color/cast_expanded_controller_text_color"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/ic_near_me_black_24dp" />
+
+
+                    </RelativeLayout>
 
 
 
-    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:id="@+id/distanceTravel"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/cast_expanded_controller_text_color"
+                            android:paddingTop="0dp"
+                            android:text="0Km"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:background="@color/cast_expanded_controller_text_color"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/mpsdk_cash_sign" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:id="@+id/amountEstimate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingTop="0dp"
+                            android:background="@color/cast_expanded_controller_text_color"
+                            android:text="$0"
+                            android:textAlignment="center"
+                            android:textColor="#4d6f3e"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="top"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="4dp">
+
+                            <fragment
+                                android:id="@+id/place_autocomplete_fragment"
+                                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:tint="@color/mpsdk_argencard"
+                            app:srcCompat="@drawable/ic_directions_car_black_40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:spinnerMode="dropdown"
+                            android:background="@drawable/spiner_basic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:tint="@color/mpsdk_argencard"
+                            app:srcCompat="@drawable/ic_local_shipping_black_40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:onClick="onCheckboxClicked"
+                            android:id="@+id/isFleetTravel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¿Es flete?" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/content_flete"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:id="@+id/tv"
+                            android:layout_marginTop="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/danger"
+                            android:text="¿Cuántos ayudantes necesita?"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <NumberPicker
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:id="@+id/isFleetTravelAssistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="0dp"
+                            android:tint="@color/mpsdk_argencard"
+                            app:srcCompat="@drawable/ic_flight_black_24dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:onClick="onCheckboxClicked"
+                            android:id="@+id/isFly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Incluir Datos de Vuelo" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/content_fly"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingTop="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="HORA:"
+                            android:textColor="@color/danger" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <EditText
+                            android:id="@+id/txt_hoursAribo"
+                            android:layout_width="match_parent"
+                            android:inputType="datetime"
+                            android:background="@drawable/rounded_border_textview"
+                            android:textAlignment="center"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingTop="20dp"
+                            android:textSize="9dp"
+                            android:textStyle="bold"
+                            android:text="AUEROPUERTO:"
+                            android:textColor="@color/place_autocomplete_prediction_secondary_text" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <EditText
+                            android:text=""
+                            android:id="@+id/txt_terminalnew"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/rounded_border_textview"
+                            android:textAlignment="center"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingTop="20dp"
+                            android:textSize="9dp"
+                            android:textStyle="bold"
+                            android:text="AEROLÍNEA:"
+                            android:textColor="@color/place_autocomplete_prediction_secondary_text" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <EditText
+                            android:text=""
+                            android:id="@+id/txt_airlineCompany"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/rounded_border_textview"
+                            android:textAlignment="center"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:paddingTop="20dp"
+                            android:textSize="9dp"
+                            android:textStyle="bold"
+                            android:text="#DE VUELO::"
+                            android:textColor="@color/place_autocomplete_prediction_secondary_text" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <EditText
+                            android:text=""
+                            android:id="@+id/txt_flyNumber"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/rounded_border_textview"
+                            android:textAlignment="center"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_requetTravelNow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:height="60dp"
+                            android:textSize="30dp"
+                            android:width="390dp"
+                            android:text="Solicitar"
+                            android:textColor="@color/whithe"
+                            app:backgroundTint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </android.support.v7.widget.CardView>
 
     <LinearLayout
      android:id="@+id/contentInfoReervation"
      android:layout_width="match_parent"
-     android:layout_height="229dp"
+     android:layout_height="239dp"
      android:layout_marginTop="50dp"
-     android:background="@color/blueClear"
      android:orientation="vertical"
      android:paddingTop="5dp"
         android:visibility="invisible"
+        android:background="@color/blanco"
         >
 
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="36dp"
+         android:layout_marginTop="5dp"
          android:layout_marginBottom="5dp"
          android:layout_marginLeft="7dp"
          android:layout_marginRight="7dp"
@@ -113,7 +588,7 @@
                  android:layout_alignParentRight="true"
                  android:layout_alignParentTop="true"
                  android:scaleType="center"
-                 android:src="@android:drawable/ic_menu_send" />
+                 app:srcCompat="@drawable/ic_place_black_24dp" />
          </RelativeLayout>
 
          <RelativeLayout
@@ -121,8 +596,13 @@
              android:layout_height="wrap_content"
              android:layout_weight="3">
 
-             <AutoCompleteTextView
 
+
+
+             <AutoCompleteTextView
+                 android:text=""
+                 android:background="@drawable/rounded_border_textview"
+                 android:paddingLeft="15dp"
                  android:id="@+id/autoCompleteTextView"
                  android:layout_width="match_parent"
                  android:layout_height="44dp"
@@ -132,12 +612,11 @@
                  android:layout_alignParentRight="true"
                  android:layout_alignParentStart="true"
                  android:layout_alignParentTop="true"
-                 android:background="@color/cast_expanded_controller_text_color"
                  android:ems="10"
                  android:hint="Origen del Viaje"
                  android:textColor="@color/place_autocomplete_prediction_primary_text">
 
-                 <requestFocus />
+
              </AutoCompleteTextView>
          </RelativeLayout>
      </LinearLayout>
@@ -162,7 +641,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:scaleType="center"
-                    android:src="@android:drawable/ic_menu_send" />
+                    app:srcCompat="@drawable/ic_directions_primari_24dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -181,12 +660,12 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:background="@color/cast_expanded_controller_text_color"
                     android:ems="10"
                     android:hint="Destino del Viaje"
-                    android:textColor="@color/place_autocomplete_prediction_primary_text">
+                    android:background="@drawable/rounded_border_textview"
+                    android:paddingLeft="15dp">
 
-                    <requestFocus />
+
                 </AutoCompleteTextView>
             </RelativeLayout>
         </LinearLayout>
@@ -211,7 +690,9 @@
                  android:layout_alignParentRight="true"
                  android:layout_alignParentTop="true"
                  android:scaleType="center"
-                 android:src="@android:drawable/ic_menu_zoom" />
+                 android:tint="@color/colorPrimary"
+                 app:srcCompat="@drawable/ic_directions_car_black_40dp"
+                 />
          </RelativeLayout>
 
          <RelativeLayout
@@ -219,26 +700,16 @@
              android:layout_height="wrap_content"
              android:layout_weight="3">
 
-
-
              <Spinner
                  android:id="@+id/spinner2"
                  android:layout_marginTop="0dp"
                  android:layout_marginLeft="5dp"
                  android:layout_marginRight="5dp"
-                 android:background="@color/blanco"
+                 android:background="@drawable/spiner_basic"
                  android:layout_width="fill_parent"
                  android:layout_height="45dp" />
 
-             <!--    <AutoCompleteTextView
-                 android:id="@+id/txtCatVehicleReervation"
-                 android:layout_width="match_parent"
-                 android:layout_height="@dimen/cast_intro_overlay_focus_radius"
-                 android:layout_alignParentLeft="true"
-                 android:layout_alignParentStart="true"
-                 android:layout_alignParentTop="true"
-                 android:background="@color/cardview_light_background"
-                 android:hint="Categoria" />-->
+
             </RelativeLayout>
         </LinearLayout>
 
@@ -263,6 +734,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:scaleType="center"
+                    android:tint="@color/colorPrimary"
                     android:src="@android:drawable/ic_menu_my_calendar" />
             </RelativeLayout>
 
@@ -275,7 +747,8 @@
                     android:id="@+id/txtdateReervation"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/cast_intro_overlay_focus_radius"
-                    android:background="@color/cardview_light_background"
+                    android:background="@drawable/rounded_border_textview"
+                    android:paddingLeft="15dp"
                     android:ems="10"
                     android:hint="DD/MM/AAAA"
                     android:inputType="textPersonName" />
@@ -289,6 +762,8 @@
 
                 <ImageView
                     android:id="@+id/image"
+                    android:tint="@color/colorPrimary"
+
                     android:layout_width="50dip"
                     android:layout_height="fill_parent"
                     android:layout_alignParentLeft="true"
@@ -306,8 +781,9 @@
                     android:id="@+id/txtTimeReervation"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/cast_intro_overlay_focus_radius"
-                    android:background="@color/cardview_light_background"
                     android:ems="10"
+                    android:background="@drawable/rounded_border_textview"
+                    android:paddingLeft="15dp"
                     android:hint=" HH:MM"
                     android:inputType="textPersonName" />
 
@@ -315,13 +791,28 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <Button
+
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/btnrequertReser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/succes"
-            android:text="Solicitar Reserva" />
+            android:height="60dp"
+            android:textSize="30dp"
+            android:width="390dp"
+            android:text="Solicitar Reserva"
+            android:textColor="@color/whithe"
+            app:backgroundTint="@color/colorPrimary" />
+
+
     </LinearLayout>
+
+
+
+
+
+
+
+
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/material_design_android_floating_action_menu"
@@ -387,6 +878,10 @@
 
 
     </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
 
 
 </android.support.design.widget.CoordinatorLayout>

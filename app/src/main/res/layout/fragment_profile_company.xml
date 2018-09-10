@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:weightSum="1">
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="132dp"
-        android:orientation="horizontal">
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:weightSum="1">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgView"
-            android:rotation="360"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/rgrp01"
-            android:layout_weight="1"></ImageView>
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/noimg"
+            app:civ_border_color="@color/mpsdk_review_description_text"
+            app:civ_border_width="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -28,30 +39,22 @@
         android:baselineAligned="false"
         android:orientation="horizontal">
 
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3">
 
-            <Button
-                android:id="@+id/btnPic"
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/holo_red_light"
-                android:text="Buscar Foto" />
-        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="70dp"
+            android:padding="2dp"
             android:layout_height="wrap_content"
             android:layout_weight="3">
 
             <Button
                 android:id="@+id/btnSafePick"
+                android:textColor="@color/blanco"
                 android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textSize="20dp"
                 android:layout_height="wrap_content"
-                android:background="@color/succes"
+                android:background="@drawable/buton_round"
                 android:text="GUARDAR Foto"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
@@ -74,6 +77,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0">
 
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -81,6 +87,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:paddingTop="10dp"
+                android:textStyle="bold"
                 android:textSize="17dp"
                 android:text="Nombre:"
                 android:textColor="@color/place_autocomplete_prediction_secondary_text" />
@@ -91,15 +98,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <EditText
-                android:text="---"
+                android:text=""
                 android:id="@+id/txt_name"
                 android:layout_width="match_parent"
+                android:background="@drawable/rounded_border_textview"
+                android:textAlignment="center"
                 android:layout_height="70dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
         </RelativeLayout>
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,6 +125,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0">
 
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -122,6 +135,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:paddingTop="10dp"
+                android:textStyle="bold"
                 android:textSize="17dp"
                 android:text="Apellido:"
                 android:textColor="@color/place_autocomplete_prediction_secondary_text" />
@@ -132,15 +146,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <EditText
-                android:text="---"
+                android:text=""
                 android:id="@+id/txt_last_name"
                 android:layout_width="match_parent"
+                android:background="@drawable/rounded_border_textview"
+                android:textAlignment="center"
                 android:layout_height="70dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
         </RelativeLayout>
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -156,6 +173,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0">
 
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -163,6 +183,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:paddingTop="10dp"
+                android:textStyle="bold"
                 android:textSize="17dp"
                 android:text="DNI:"
                 android:textColor="@color/place_autocomplete_prediction_secondary_text" />
@@ -173,15 +194,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <EditText
-                android:text="----"
+                android:text=""
                 android:id="@+id/txt_dni"
                 android:layout_width="match_parent"
+                android:background="@drawable/rounded_border_textview"
+                android:textAlignment="center"
                 android:layout_height="70dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
         </RelativeLayout>
     </LinearLayout>
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -196,6 +222,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0">
 
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -203,6 +232,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:paddingTop="10dp"
+                android:textStyle="bold"
                 android:textSize="17dp"
                 android:text="Correo:"
                 android:textColor="@color/place_autocomplete_prediction_secondary_text" />
@@ -213,15 +243,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <EditText
-                android:text="---"
+                android:text=""
                 android:id="@+id/txt_mail"
                 android:layout_width="match_parent"
+                android:background="@drawable/rounded_border_textview"
+                android:textAlignment="center"
                 android:layout_height="70dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
         </RelativeLayout>
     </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -236,16 +270,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="0">
 
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:paddingTop="10dp"
+                android:textStyle="bold"
                 android:textSize="17dp"
                 android:text="Nro.Tel:"
-                android:textColor="@color/place_autocomplete_prediction_secondary_text"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:textColor="@color/place_autocomplete_prediction_secondary_text" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -253,9 +291,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <EditText
-                android:text="---"
+                android:text=""
                 android:id="@+id/txt_phone"
                 android:layout_width="match_parent"
+                android:background="@drawable/rounded_border_textview"
+                android:textAlignment="center"
                 android:layout_height="70dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
@@ -263,12 +303,20 @@
         </RelativeLayout>
     </LinearLayout>
 
+
     <Button
         android:id="@+id/safe_info"
+        android:background="@drawable/buton_round"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/blanco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/succes"
         android:text="Actualizar Datos" />
+
+
+
 
 
 </LinearLayout>

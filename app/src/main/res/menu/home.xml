@@ -2,6 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item
+        android:id="@+id/action_refhesh"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        android:orderInCategory="200"
+        android:title="Notifications"
+        app:showAsAction="always"></item>
 
     <item
         android:id="@+id/action_reervations"
