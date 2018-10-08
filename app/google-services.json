@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "449254673857",
-    "firebase_url": "https://as-remis-f0557.firebaseio.com",
-    "project_id": "as-remis-f0557",
-    "storage_bucket": "as-remis-f0557.appspot.com"
+    "project_number": "1092843638090",
+    "firebase_url": "https://as-nube.firebaseio.com",
+    "project_id": "as-nube",
+    "storage_bucket": "as-nube.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:449254673857:android:e3f7a1a07e8d6c30",
+        "mobilesdk_app_id": "1:1092843638090:android:b9ee964aaeb90d87",
         "android_client_info": {
-          "package_name": "com.example.jorgegutierrez.firebase"
+          "package_name": "com.apreciasoft.mobile.RemisCentro"
         }
       },
       "oauth_client": [
         {
-          "client_id": "449254673857-1rta86a7cdsrqg9bag249o9s1ddmkcc0.apps.googleusercontent.com",
+          "client_id": "1092843638090-blbg96n6n19mcg2qop9af2p3pv0hbgnl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZSc5vrFMjoWY_8ER710Wadj3LqmR4uRM"
+          "current_key": "AIzaSyCXLaq7AsIs9NyJfIWznzYw-xwbh3IpjOU"
         }
       ],
       "services": {
@@ -39,20 +39,113 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:449254673857:android:5f319cd0167c59d6",
+        "mobilesdk_app_id": "1:1092843638090:android:1b7039e61bb74111",
         "android_client_info": {
-          "package_name": "com.apreciasoft.admin.remisclasea"
+          "package_name": "com.apreciasoft.mobile.arraijan"
         }
       },
       "oauth_client": [
         {
-          "client_id": "449254673857-1rta86a7cdsrqg9bag249o9s1ddmkcc0.apps.googleusercontent.com",
+          "client_id": "1092843638090-blbg96n6n19mcg2qop9af2p3pv0hbgnl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZSc5vrFMjoWY_8ER710Wadj3LqmR4uRM"
+          "current_key": "AIzaSyCXLaq7AsIs9NyJfIWznzYw-xwbh3IpjOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092843638090:android:23e5abeb55d1a8b7",
+        "android_client_info": {
+          "package_name": "com.apreciasoft.mobile.intercarremis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092843638090-blbg96n6n19mcg2qop9af2p3pv0hbgnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXLaq7AsIs9NyJfIWznzYw-xwbh3IpjOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092843638090:android:bd3cc89a9c79f4df",
+        "android_client_info": {
+          "package_name": "com.apreciasoft.mobile.patagoniatrasnfersa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092843638090-blbg96n6n19mcg2qop9af2p3pv0hbgnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXLaq7AsIs9NyJfIWznzYw-xwbh3IpjOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092843638090:android:b8b214e6d2c6d6f7",
+        "android_client_info": {
+          "package_name": "com.apreciasoft.mobile.remisclasea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092843638090-blbg96n6n19mcg2qop9af2p3pv0hbgnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXLaq7AsIs9NyJfIWznzYw-xwbh3IpjOU"
         }
       ],
       "services": {
