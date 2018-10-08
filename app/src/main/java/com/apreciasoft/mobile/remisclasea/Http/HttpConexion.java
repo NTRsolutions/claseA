@@ -23,8 +23,6 @@ public class HttpConexion {
     public  static  String COUNTRY = "ARG";
 
 
-
-
     public static final String BASE_URL = PROTOCOL+"://"+ip+"/";
 
     //public static final String BASE_URL = PROTOCOL+"://"+ip+":8888/";

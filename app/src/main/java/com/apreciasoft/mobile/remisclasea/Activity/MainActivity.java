@@ -1,20 +1,20 @@
 package com.apreciasoft.mobile.remisclasea.Activity;
 
-        import android.Manifest;
-        import android.annotation.SuppressLint;
-        import android.app.ProgressDialog;
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-        import android.content.SharedPreferences;
-        import android.content.pm.PackageManager;
-        import android.graphics.Color;
-        import android.graphics.Typeface;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
-        import android.os.Bundle;
+import android.os.Bundle;
 import android.os.PowerManager;
-        import android.support.design.widget.Snackbar;
-        import android.support.v4.app.ActivityCompat;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -23,31 +23,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-        import com.apreciasoft.mobile.remisclasea.Entity.VehicleType;
-        import com.apreciasoft.mobile.remisclasea.Entity.login;
-        import com.apreciasoft.mobile.remisclasea.Entity.paramEntity;
-        import com.apreciasoft.mobile.remisclasea.Entity.user;
+import com.apreciasoft.mobile.remisclasea.Entity.VehicleType;
+import com.apreciasoft.mobile.remisclasea.Entity.login;
+import com.apreciasoft.mobile.remisclasea.Entity.paramEntity;
+import com.apreciasoft.mobile.remisclasea.Entity.user;
 import com.apreciasoft.mobile.remisclasea.Entity.userFull;
 import com.apreciasoft.mobile.remisclasea.Fracments.RegisterForm;
 import com.apreciasoft.mobile.remisclasea.Http.HttpConexion;
 import com.apreciasoft.mobile.remisclasea.R;
 import com.apreciasoft.mobile.remisclasea.Services.ServicesLoguin;
 import com.apreciasoft.mobile.remisclasea.Util.GlovalVar;
-        import com.crashlytics.android.Crashlytics;
-        import com.google.gson.Gson;
+import com.crashlytics.android.Crashlytics;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-        import com.google.gson.reflect.TypeToken;
-        import java.util.ArrayList;
+import com.google.gson.reflect.TypeToken;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-        import io.fabric.sdk.android.Fabric;
-        import retrofit2.Call;
+import io.fabric.sdk.android.Fabric;
+import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 import static com.apreciasoft.mobile.remisclasea.Util.Utils.verificaConexion;
 
 public class MainActivity extends AppCompatActivity {
@@ -602,8 +599,6 @@ public class MainActivity extends AppCompatActivity {
                     Snackbar.make(findViewById(android.R.id.content),
                             "ERROR ("+t.getMessage()+")", Snackbar.LENGTH_LONG).show();
                     HttpConexion.setBase(HttpConexion.instance);
-
-
                 }
 
             });
