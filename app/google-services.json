@@ -39,6 +39,37 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1092843638090:android:8bdb08c705c782a3",
+        "android_client_info": {
+          "package_name": "com.apreciasoft.mobile.SanCayetano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092843638090-blbg96n6n19mcg2qop9af2p3pv0hbgnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXLaq7AsIs9NyJfIWznzYw-xwbh3IpjOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1092843638090:android:1b7039e61bb74111",
         "android_client_info": {
           "package_name": "com.apreciasoft.mobile.arraijan"
