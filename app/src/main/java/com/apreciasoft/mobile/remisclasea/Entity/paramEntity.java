@@ -2,13 +2,11 @@ package com.apreciasoft.mobile.remisclasea.Entity;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import javax.annotation.Nullable;
 
 /**
  * Created by Admin on 20/1/2017.
  */
 
-@Nullable
 public class paramEntity {
 
 

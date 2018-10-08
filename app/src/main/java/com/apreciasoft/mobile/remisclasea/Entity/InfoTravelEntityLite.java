@@ -2,18 +2,13 @@ package com.apreciasoft.mobile.remisclasea.Entity;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
 import java.io.Serializable;
-
-import javax.annotation.Nullable;
 
 /**
  * Created by Admin on 06/01/2017.
  */
 
-@Nullable
 public  class InfoTravelEntityLite implements Serializable {
-
 
 
     @Expose
