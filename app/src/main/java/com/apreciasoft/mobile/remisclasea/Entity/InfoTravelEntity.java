@@ -344,21 +344,13 @@ public  class InfoTravelEntity implements Serializable {
     @SerializedName("isPaymentCash")
     public int isPaymentCash;
 
-
-
-
     @Expose
     @SerializedName("idBenefitKmClientKf")
     public int idBenefitKmClientKf;
 
-
-    @Nullable
     @Expose
     @SerializedName("listBeneficio")
     public List<BeneficioEntity> listBeneficio;
-
-
-
 
     @Expose
     @SerializedName("isConfirReservationFromWeb")
